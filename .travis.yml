@@ -1,0 +1,24 @@
+language: python
+
+sudo: false
+dist: trusty
+
+python:
+    - "3.5"
+
+cache:
+    apt: true
+    pip: true
+    ccache: true
+
+before_install:
+    - set -e  # fail on any error
+
+install:
+    - pip install -U pip wheel setuptools
+    - pip install pyqt5==5.7.1
+    - pip install git+https://github.com/biolab/orange3.git
+    - pip install .
+
+script:
+    - catchsegv xvfb-run -a -s "-screen 0 1280x1024x24" python setup.py test

@@ -1,0 +1,13 @@
+OPyHighcharts
+=============
+Orange Python Highcharts is a simple [Highcharts] wrapper for Python and
+Qt's WebKit / WebEngine. It depends on an interface as provided by
+`Orange.widgets.utils.webview.WebviewWidget` and expects it available to
+import from `__opyhighcharts_interfaces.WebviewWidget`.
+
+It is licensed under the terms of [**CC-BY-NC-3.0**] (not open-source).
+To use its contents commercially, you need to obtain a Highcharts license.
+
+
+[Highcharts]: http://highcharts.com/
+[CC-BY-NC-3.0]: https://creativecommons.org/licenses/by-nc/3.0/
